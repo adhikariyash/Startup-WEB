@@ -1,0 +1,11 @@
+{
+    "editor.minimap.autohide": true,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "editor.wordWrapColumn": 120,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnType": true
+}
