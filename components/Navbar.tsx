@@ -57,9 +57,9 @@ const Navbar = async() => {
                 </Link>
               </>
             ) : (
-              <div className="relative inline-block bg-blue-500  rounded-lg py-1 px-3 shadow-200 text-white">
+              <div className="relative inline-block bg-blue-500  rounded-lg shadow-200 text-white">
                 {/* Login Button */}
-                <Link href={`/login`}>Login</Link>
+                <Link href={`/login`} className='py-1 px-3'>Login</Link>
               </div>
             )}
           </div>
