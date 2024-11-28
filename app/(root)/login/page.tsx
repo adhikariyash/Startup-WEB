@@ -1,13 +1,14 @@
 import React from 'react'
-import { signIn } from '@/auth';
+import { auth, signIn } from '@/auth';
 import { Button } from '@/components/ui/button';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import { redirect } from 'next/navigation';
 import { client } from '@/sanity/lib/client';
 
 
-const page = () => {
-
+const page = async() => {
+  const session = await auth()
+  session? redirect('/'): ''
   return (
     <>
      
