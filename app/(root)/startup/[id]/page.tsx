@@ -25,7 +25,7 @@ const page = async({params}: {params: Promise<{id:string}>}) => {
     await client.fetch(PLAYLIST_BY_SLUG_QUERY, {slug: "editor-picks-new"})
   ])
 
-  console.log(editorPosts)
+ 
   
   
   if (!post) return notFound()
@@ -65,13 +65,13 @@ const page = async({params}: {params: Promise<{id:string}>}) => {
             </div>
             <h3 className='text-30-bold'>Pitch Details</h3>
             {parsedContent ? (
-              <article className='prose max-4xl font-work-sans break-all' dangerouslySetInnerHTML={{__html: parsedContent}}/>
+              <article className='prose max-w-4xl font-work-sans break-all' dangerouslySetInnerHTML={{__html: parsedContent}}/>
                 
             ) : (
                 <p className='no-result'> No details provided</p>
               )}
           </div>
-          <hr className='divieder' />
+          <hr className='divider' />
             
           {editorPosts?.length > 0 && (
             <div className='max-w-4xl mx-auto'>
