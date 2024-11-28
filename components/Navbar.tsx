@@ -15,7 +15,7 @@ const Navbar = async() => {
           <Link href="/">
             
             <label className="text-0.5xl text-white uppercase">
-              <span className="text-2xl text-red-400">Build yo</span >ur Future
+              <span className="text-2xl text-red-400">share yo</span >ur Startups
             </label>
           </Link>
 
