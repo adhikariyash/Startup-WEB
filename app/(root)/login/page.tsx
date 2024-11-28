@@ -20,9 +20,11 @@ const page = () => {
           <form action={async () => {
             "use server"
               await signIn('github');
-              redirect('/')
+            
           } }>
-          <Button className='sm:text-2xl  text-white shadow-200 uppercase '>Sign In with GITHUB <span className='px-0.5'><GitHubLogoIcon/></span> </Button>
+              <Button onClick={() => {
+                  redirect('/')
+          }} className='sm:text-2xl  text-white shadow-200 uppercase '>Sign In with GITHUB <span className='px-0.5'><GitHubLogoIcon/></span> </Button>
           </form>
          
          
