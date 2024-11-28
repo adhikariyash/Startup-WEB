@@ -13,7 +13,7 @@ const Navbar = async() => {
       <header>
         <nav className="flex bg-[#be055e] text-black font-bold justify-between px-10 py-4 items-center">
           <Link href="/">
-            {" "}
+            
             <label className="text-0.5xl text-white uppercase">
               <span className="text-2xl text-red-400">Build yo</span >ur Future
             </label>
@@ -25,7 +25,7 @@ const Navbar = async() => {
                 <Link href="/startup/create">
                   <span
                     className="max-sm:hidden px-4 py-2 
-                  rounded-full sm:hover:bg-gray-100 "
+                  rounded-full sm:hover:bg-gray-100 sm:hover:text-black text-white "
                   >
                     Create
                   </span>
@@ -39,7 +39,8 @@ const Navbar = async() => {
                 >
                   <button
                     type="submit"
-                    className="w-full px-4 py-2 text-left rounded-full sm:hover:bg-gray-100"
+                    className="w-full px-4 py-2 text-left rounded-full sm:hover:bg-gray-100
+                    sm:hover:text-black text-white"
                   >
                     <span className="max-sm:hidden">LogOut</span>
                     <LogOut className="size-6 sm:hidden text-red-500" />
