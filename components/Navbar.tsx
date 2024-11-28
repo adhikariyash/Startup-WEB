@@ -11,10 +11,10 @@ const Navbar = async() => {
   return (
     <>
       <header>
-        <nav className="flex bg-white text-black font-bold justify-between px-10 py-4 items-center">
+        <nav className="flex bg-[#be055e] text-black font-bold justify-between px-10 py-4 items-center">
           <Link href="/">
             {" "}
-            <label className="text-0.5xl uppercase">
+            <label className="text-0.5xl text-white uppercase">
               <span className="text-2xl text-red-400">Build yo</span >ur Future
             </label>
           </Link>
@@ -59,7 +59,7 @@ const Navbar = async() => {
             ) : (
               <div className="relative inline-block text-white">
                 {/* Login Button */}
-                <Link href={`/login`} className='py-2 px-3 bg-blue-500  rounded-lg shadow-200 '>Login</Link>
+                <Link href={`/login`} className='py-2 px-3 bg-blue-500  rounded-lg shadow-200'>Login</Link>
               </div>
             )}
           </div>
